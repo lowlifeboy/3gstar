@@ -1,0 +1,1262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: "source-sans-pro",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+}
+
+header,
+section {
+	width: 100%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.container {
+    width: 960px;
+    padding: 0 15px;
+}
+
+/*-------------------- Header --------------------*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 75px;
+	background: #3c7cf1;
+	box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+	z-index: 999;
+}
+
+header .container {
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.header__logo {
+	height: 45px;
+}
+
+.header__rightPart,
+.header__showMobileNumbers,
+.customerSupportNumber {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.header__rightPart {
+	height: 100%;
+}
+
+.header__listMobileNumbers,
+.header__menu nav {
+	display: none;
+}
+
+.header__menu,
+.header__socialIcons,
+.header__showMobileNumbers {
+	margin-left: 60px;
+}
+
+.header__socialIcons {
+	width: 82px;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+.customerSupportNumber {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+}
+
+.customerSupportNumber img {
+	width: 23px;
+	margin-right: 10px;
+}
+
+.header__showMobileNumbers,
+.header__menu {
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.header__menu {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.header__showMobileNumbers img:first-child {
+	margin-right: 10px;
+}
+
+.header__showMobileNumbers:hover .header__listMobileNumbers,
+.header__menu:hover nav {
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	padding-top: 10px;
+}
+
+.header__listMobileNumbers {
+	width: 103px;
+}
+
+nav {
+	width: 200px;
+}
+
+.header__listMobileNumbers > div,
+nav > div {
+	width: 100%;
+	padding: 18px 32px;
+	background: #3c7cf1;
+	box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+}
+
+.header__listMobileNumbers li,
+nav li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.header__listMobileNumbers li:last-child,
+nav li:last-child {
+	margin: 0;
+}
+
+.header__listMobileNumbers a,
+nav a {
+	color: #fff;
+}
+
+
+
+/*-------------------- Description --------------------*/
+
+#description {
+	margin-top: 75px;
+	background: linear-gradient(rgba(60, 124, 241, 1) 0%, rgba(60, 124, 241, 0.7) 10%, rgba(60, 124, 241, 0.5) 50%, rgba(60, 124, 241, 0.7) 90%, rgba(60, 124, 241, 1) 100%), url("images/main_section_bg.png");
+	color: #fff;
+}
+
+#description .container {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.description__content {
+	margin: 98px 0;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+.description__text h1 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+	margin-bottom: 31px;
+}
+
+.description__text li {
+	list-style: none;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	margin-bottom: 23px;
+	width: 482px;
+	display: flex;
+}
+
+.description__text li img {
+	width: 10px;
+	height: 10px;
+	padding: 8px 12px;
+}
+
+.description__form {
+	padding: 57px 60px 60px;
+	background: #3c7cf1;
+	border-radius: 10px;
+	box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.75);
+	margin-left: 15px;
+}
+
+.description__form,
+.description__form form {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.description__form h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	margin-bottom: 14px;
+}
+
+.description__form p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	margin-bottom: 58px;
+}
+
+.description__form input {
+	width: 264px;
+	height: 38px;
+	background-color: #ffffff;
+	border: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 10px;
+	padding: 0 22px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-bottom: 28px;
+}
+
+.description__form button,
+.before770px {
+	margin-top: 30px;
+	width: 158px;
+	height: 38px;
+	border: none;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	border-radius: 10px;
+	color: #3c7cf1;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.before770px {
+	display: none;
+	margin: 50px auto 0;
+}
+
+
+
+/*-------------------- whatWeDecide --------------------*/
+
+#whatWeDecide .container {
+	padding: 76px 0;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+#whatWeDecide h2 {
+	color: #3c7cf1;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 52px;
+}
+
+#whatWeDecide img {
+	height: 170px;
+	margin-left: -14px;
+	margin-top: -30px;
+}
+
+.whatWeDecideDetails {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 70px;
+}
+
+.whatWeDecideDetails > div {
+	display: flex;
+	color: #222222;
+}
+
+.whatWeDecideDetails h3 {
+	padding-right: 70px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+.whatWeDecideDetails p {
+	padding-right: 90px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.loyaltyProgram {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+	text-align: center;
+	color: #222;
+}
+
+.loyaltyProgram h3 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+.loyaltyProgram p {
+	width: 295px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+
+/*-------------------- Benefit -------------------- */
+
+#benefit {
+	padding: 70px 0;
+	background: linear-gradient(rgba(60, 124, 241, 1) 0%, rgba(60, 124, 241, 0.7) 10%, rgba(60, 124, 241, 0.5) 50%, rgba(60, 124, 241, 0.7) 90%, rgba(60, 124, 241, 1) 100%), url("images/section_3.png");
+}
+
+#benefit h2 {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 58px;
+}
+
+#benefit .container {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.benefit__content {
+	display: grid;
+	grid-template-columns: 384px 384px;
+	grid-gap: 96px;
+}
+
+.benefit__content > div {
+	box-shadow: 5px 9px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.benefit__content .blockHeader {
+	padding: 15px 32px;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+}
+
+.benefit__content .blockHeader h3 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 9px;
+}
+
+.benefit__content .blockHeader p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.benefits {
+	height: 405px;
+	padding: 25px 28px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	border-radius: 0 0 10px 10px;
+}
+
+.benefits li {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.benefits li:last-child {
+	margin-bottom: 0;
+}
+
+.benefit__forPatients .blockHeader,
+.benefit__forDoctors .benefits {
+	background: #FFF;
+}
+
+.benefit__forPatients .benefits,
+.benefit__forDoctors .blockHeader {
+	background: #3C7CF1;
+	color: #fff;
+}
+
+
+
+/*-------------------- Price --------------------*/
+
+#price {
+	padding: 70px 0;
+}
+
+#price .container {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+#price h2 {
+	color: #3c7cf1;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 18px;
+	margin-bottom: 58px;
+}
+
+#price h3 {
+	color: #222222;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 34px;
+}
+
+.tariff {
+	border-radius: 10px;
+	box-shadow: 5px 9px 30px rgba(0, 0, 0, 0.2);
+	background: red;
+}
+
+.tariffsForPatients,
+.tariffsForAdministration {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.tariffsForPatients {
+	margin-bottom: 50px;
+}
+
+.tariffHeader {
+	padding: 17px 22px 16px;
+	text-align: center;
+	background: gold;
+	border-radius: 10px 10px 0 0;
+	height: 121px;
+	-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	         box-sizing: border-box; 
+}
+
+.tariffHeader h4 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 4px;
+}
+
+.tariffHeader p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.tariffDescription {
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 24px 30px 28px;
+	
+	border-radius: 0 0 10px 10px;
+}
+
+.tariffDescription > div {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.tariffDescription .devicesNumber {
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 28px;
+	margin-bottom: 13px;
+}
+
+.tariffDescription ul {
+	width: 100%;
+}
+
+.tariffDescription li {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 16px;
+	display: flex;
+}
+
+.tariffDescription li img {
+	width: 10px;
+	height: 10px;
+	margin: 8px 12px 0 0;
+}
+
+.tariffDescription .price {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 24px;
+	color: #222;
+}
+
+.tariffDescription .connectTariff {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 28px;
+	padding: 12px 30px 9px;
+	text-decoration: none;
+	border-radius: 10px;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+	margin-bottom: 25px;
+}
+
+.tariffDescription .tariffSpeed {
+	color: #222;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+.tariffsForPatients .tariffDescription {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 436px;
+}
+
+.tariffsForPatients .tariffHeader, 
+.tariffsForAdministration .tariffDescription {
+	background: #FFF;
+	color: #222;
+}
+
+.tariffsForAdministration .tariffDescription {
+	color: #3c7cf1;
+}
+
+.tariffsForAdministration .tariffHeader, 
+.tariffsForPatients .tariffDescription {
+	background: #3c7cf1;
+	color: #fff;
+}
+
+.tariffDescription .devicesNumber,
+.tariffDescription .price,
+.tariffDescription .tariffSpeed {
+	color: #222;
+}
+
+.tariffsForAdministration .tariffDescription {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 448px;
+}
+
+.tariffsForPatients .connectTariff {
+	background: #FFF;
+	color: #3c7cf1;
+}
+
+.tariffsForAdministration .connectTariff {
+	background: #3c7cf1;
+	color: #FFF;
+}
+
+
+
+/*-------------------- Customers reviews --------------------*/
+
+#customerReviews {
+	padding: 70px 0 95px;
+}
+
+#customerReviews h2 {
+	color: #3c7cf1;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 11px;
+	text-align: center;
+}
+
+#customerReviews .container {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.carouselSlider > div {
+	display: flex;
+	width: 790px;
+	margin: 50px auto 40px;
+	padding: 39px 40px 39px 26px;
+	border-radius: 10px;
+	box-shadow: 5px 9px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carouselSlider > div img {
+	height: 110px;
+	margin-right: 22px;
+	margin-top: -10px;
+}
+
+.carousel p {
+	color: #222222;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.carousel .review {
+	margin-bottom: 20px;
+}
+
+.carousel .author span:first-child {
+	font-weight: bold;
+}
+
+.carousel .author span:last-child {
+	font-style: italic;
+}
+
+.slick-dots {
+	display: flex;
+    justify-content: center;
+}
+
+.slick-dots li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+
+.slick-dots li:last-child {
+	margin-right: 0;
+}
+
+.my-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url('images/ellipse_section_4_copy.png');
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 1;
+  color: black;
+}
+
+
+
+/*-------------------- Footer --------------------*/
+
+footer {
+	width: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+	background: #3c7cf1;
+	padding: 70px 0 0;
+	color: #fff;
+}
+
+.footer__mainContent {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+footer h2 {
+	color: #222222;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .companyNumbersForCities {
+	width: 100%;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+footer .companyNumbersForCities ul {
+	width: 200px;
+	margin-bottom: 40px;
+}
+
+footer .companyNumbersForCities li {
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-bottom: 9px;
+}
+
+.horizontalLine {
+	width: 100%;
+	height: 2px;
+	background: #FFF;
+	margin-bottom: 43px;
+}
+
+.companyLogoAndSocialLinks {
+	width: 100%;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-bottom: 50px;
+}
+
+.companyLogoAndSocialLinks .viber {
+	width: 22px;
+	margin-left: 13px;
+}
+
+.companyLogoAndSocialLinks .telegram {
+	margin-left: 13px;
+}
+
+.companyLogoAndSocialLinks h3 {
+	color: #222222;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.companyLogoAndSocialLinks ul {
+	width: 220px;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+}
+
+.companyLogoAndSocialLinks li:first-child {
+	margin-bottom: 15px;
+}
+
+.companyLogoAndSocialLinks li a {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.copyright {
+	width: 100%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	background-color: #0256f1;
+}
+
+.copyright p {
+	margin: 17px 0;
+}
+
+/*-------------------- Media Queries --------------------*/
+
+@media (max-width: 1020px) {
+	.container {
+		width: calc(100% - 30px);
+	}
+
+	h2 {
+		font-size: calc(16px + 1.8vw) !important;
+	}
+
+	.description__text li {
+		width: auto;
+		font-size: calc(13px + 1vw);
+	}
+	
+	.description__text h1 {
+		font-size: calc(14px + 3vw);
+	}
+
+	.whatWeDecideDetails {
+		grid-template-columns: 600px;
+		justify-content: center;
+	}
+
+	.whatWeDecideDetails h3,
+	.whatWeDecideDetails p {
+		padding-right: 0;
+	}
+
+	.internetForPatients {
+		margin-bottom: 50px;
+	}
+
+	.benefit__content {
+		grid-template-columns: 1fr;
+		grid-gap: 65px;
+		margin: 0 7vw;
+	}
+
+	.benefits {
+		height: auto;
+	}
+
+	#price h3 {
+		font-size: calc(14px + 2vw);
+	}
+
+	.tariffsForPatients,
+	.tariffsForAdministration {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+
+	.tariffHeader {
+		height: auto;
+	}
+
+	.tariffsForPatients .tariffDescription,
+	.tariffsForAdministration .tariffDescription {
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.tariffsForPatients .tariffDescription > div:last-child,
+	.tariffsForAdministration .tariffDescription > div:last-child {
+		display: grid;
+		grid-template-columns: auto;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		text-align: center;
+		-webkit-align-content: center;
+		        align-content: center;
+	}
+
+	.carouselSlider > div {
+		width: 70vw;
+	}
+
+	footer .companyNumbersForCities {
+		width: auto;
+		margin-bottom: 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+	}
+
+	footer .companyNumbersForCities ul {
+		margin-bottom: 0px;
+	}
+
+	.companyLogoAndSocialLinks {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-justify-content: space-between;
+			        justify-content: space-between;
+		-webkit-align-items: center;
+		        align-items: center;
+    }
+	
+	.companyLogoAndSocialLinks h3,
+    .footer__logo {
+    	margin-bottom: 30px;
+    }
+
+    .companyLogoAndSocialLinks ul {
+    	-webkit-align-items: center;
+    	        align-items: center;
+    }
+}
+
+@media (max-width: 770px) {
+	#description {
+		padding: 70px 0;
+	}
+
+	.header__socialIcons {
+		display: none;
+	}
+
+	.header__showMobileNumbers {
+		display: none;
+	}
+
+	.description__content {
+		margin: 0;
+	}
+
+	.description__text h1 {
+		text-align: center;
+	}
+
+	.description__form {
+		display: none;
+	}
+
+	.before770px {
+		display: block;
+	}
+
+	.whatWeDecideDetails {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 580px) {
+	.header__menu:hover nav {
+		top: 35px;
+	}
+
+	section h2 {
+		margin-bottom: 40px !important;
+	}
+
+	section .container {
+		padding: calc(30px + 5vw) 15px !important;
+	}
+
+	section {
+		padding: 0 !important;
+	}
+
+	header {
+		height: 50px;
+	}
+
+	.header__logo {
+		height: 35px;
+	}
+
+	.customerSupportNumber {
+		display: none;
+	}
+
+	#description {
+		margin-top: 50px;
+	}
+
+	.description__text li {
+    	line-height: 20px;
+    	margin-bottom: 10px;
+    }
+
+    .whatWeDecideDetails {
+    	margin-bottom: 40px;
+    }
+
+    .whatWeDecideDetails > div {
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    }
+
+    .whatWeDecideDetails h3,
+    .loyaltyProgram h3 {
+    	line-height: 24px;
+    	margin-bottom: 10px;
+    }
+
+    .whatWeDecideDetails p,
+    .loyaltyProgram p {
+    	line-height: 22px;
+    }
+
+    #whatWeDecide img {
+    	width: 90%;
+    	height: auto;
+    	margin: -13vw 5% 10px;
+    }
+
+    .loyaltyProgram p {
+    	width: auto;
+    }
+
+    .benefit__content {
+	    margin: 0;
+    }
+
+    .benefit__content .blockHeader p {
+	    line-height: 20px;
+	}
+
+	.benefits li {
+    	margin-bottom: 20px;
+    	line-height: 20px;
+    }
+
+    .tariffsForPatients,
+	.tariffsForAdministration {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+
+	.tariffHeader {
+		height: auto;
+	}
+
+	.tariffHeader p {
+	    line-height: 20px;
+	}
+
+	.tariff h4 {
+		font-size:20px;
+	}
+
+	.tariffDescription .price {
+		margin-bottom: 10px;
+	}
+
+	.tariffDescription .price, 
+	.tariffDescription .tariffSpeed {
+		font-size: 20px;
+	}
+
+	.tariffDescription .connectTariff {
+	    margin-bottom: 10px;
+	}
+
+	.tariffsForPatients .tariffDescription,
+	.tariffsForAdministration .tariffDescription {
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.tariffsForPatients .tariffDescription > div:last-child,
+	.tariffsForAdministration .tariffDescription > div:last-child {
+		display: grid;
+		grid-template-columns: auto;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		text-align: center;
+		-webkit-align-content: center;
+		        align-content: center;
+	}
+
+	.tariffDescription ul {
+		margin-bottom: 10px;
+	}
+
+	.tariffDescription li {
+	    line-height: 20px;
+	    margin-bottom: 10px;
+	}
+
+	#customerReviews {
+		margin-bottom: 25px;
+	}
+
+	.carousel p {
+		line-height: 24px;
+	}
+
+	.carouselSlider > div {
+		width: 90%;
+	    -webkit-flex-direction: column;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	    padding: 0;
+	    -webkit-box-shadow: none;
+	            box-shadow: none;
+    }
+
+    .carouselSlider > div img {
+    	width: 90%;
+    	height: auto;
+    	margin: -18vw auto 15px;
+    }
+	.carouselSlider > div div {
+		display: flex;
+	    flex-direction: column-reverse;
+	}
+
+	.carouselSlider .author {
+		margin-bottom: 15px;
+	}
+
+	.carouselSlider .review {
+		margin-bottom: 0;
+	}
+
+	footer {
+		padding: 50px 0 0;
+	}
+
+	.horizontalLine,
+	footer h2 {
+	    margin-bottom: 23px;
+	}
+
+	footer h2 {
+		line-height: 24px;
+	}
+
+	footer h2, 
+	footer h3,
+	.copyright {
+		text-align: center;
+	}
+
+	footer .companyNumbersForCities {
+	    grid-template-columns: 1fr;
+	    grid-gap: 0px;
+	    margin-bottom: 23px;
+    }
+
+    footer .companyNumbersForCities li {
+	    margin-bottom: 3px;
+	}
+
+	footer .companyLogoAndSocialLinks {
+		margin-bottom: 23px;
+	}
+
+	footer .companyLogoAndSocialLinks h3, 
+	.footer__logo {
+	    margin-bottom: 13px;
+	}
+
+	footer .companyLogoAndSocialLinks h3 {
+		line-height: 24px;
+		font-size: 18px;
+	}
+}
